@@ -15,18 +15,11 @@ This application uses Windows hooks and  operates at the system level using `WH_
 
 ## Requirements
 
-- Windows Operating System
+- Windows OS
 - Rust toolchain (stable)
 - `winapi` crate dependency
 
 ## Building
-
-Add the following dependency to your `Cargo.toml`:
-
-```toml
-[dependencies]
-winapi = { version = "0.3", features = ["winuser"] }
-```
 
 Build the project:
 
@@ -46,7 +39,6 @@ The application will start logging immediately and create two files:
 - `kdb_log.txt` - Keyboard events
 - `ms_log.txt` - Mouse events
 
-To stop logging, terminate the process (Ctrl+C or close the window).
 
 
 ## Disclaimer
